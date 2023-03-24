@@ -1,0 +1,4 @@
+from delivery import *
+env = DeliveryEnvironment(n_stops = 128,method = "distance")
+agent = DeliveryQAgent(env.observation_space,env.action_space)
+run_n_episodes(env,agent,"training_procedure.gif")
